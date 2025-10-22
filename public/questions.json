@@ -1,0 +1,265 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "JavaScript Basics",
+      "questions": [
+        {
+          "question": "Which keyword is used to declare a block-scoped variable?",
+          "choices": [
+            { "choice": "var" },
+            { "choice": "let", "correctAnswer": "true" },
+            { "choice": "const" }
+          ]
+        },
+        {
+          "question": "Which method converts a JSON string into an object?",
+          "choices": [
+            { "choice": "JSON.parse", "correctAnswer": "true" },
+            { "choice": "JSON.stringify" },
+            { "choice": "JSON.convert" }
+          ]
+        },
+        {
+          "question": "What will `typeof NaN` return?",
+          "choices": [
+            { "choice": "number", "correctAnswer": "true" },
+            { "choice": "NaN" },
+            { "choice": "undefined" }
+          ]
+        },
+        {
+          "question": "Which operator is used for strict equality?",
+          "choices": [
+            { "choice": "==" },
+            { "choice": "===", "correctAnswer": "true" },
+            { "choice": "=>" }
+          ]
+        },
+        {
+          "question": "Which function is used to delay execution?",
+          "choices": [
+            { "choice": "setTimeout", "correctAnswer": "true" },
+            { "choice": "setInterval" },
+            { "choice": "sleep" }
+          ]
+        },
+        {
+          "question": "Which method removes the last element from an array?",
+          "choices": [
+            { "choice": "pop", "correctAnswer": "true" },
+            { "choice": "push" },
+            { "choice": "shift" }
+          ]
+        },
+        {
+          "question": "Which primitive type represents true/false?",
+          "choices": [
+            { "choice": "boolean", "correctAnswer": "true" },
+            { "choice": "string" },
+            { "choice": "number" }
+          ]
+        },
+        {
+          "question": "What does `isNaN('hello')` return?",
+          "choices": [
+            { "choice": "true", "correctAnswer": "true" },
+            { "choice": "false" },
+            { "choice": "undefined" }
+          ]
+        },
+        {
+          "question": "Which symbol is used for comments in JavaScript?",
+          "choices": [
+            { "choice": "//", "correctAnswer": "true" },
+            { "choice": "<!-- -->" },
+            { "choice": "#" }
+          ]
+        },
+        {
+          "question": "Which method joins array elements into a string?",
+          "choices": [
+            { "choice": "join", "correctAnswer": "true" },
+            { "choice": "concat" },
+            { "choice": "combine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "React Fundamentals",
+      "questions": [
+        {
+          "question": "Which hook manages side effects?",
+          "choices": [
+            { "choice": "useState" },
+            { "choice": "useEffect", "correctAnswer": "true" },
+            { "choice": "useMemo" }
+          ]
+        },
+        {
+          "question": "What is the default tool for rendering UI in React?",
+          "choices": [
+            { "choice": "ReactDOM", "correctAnswer": "true" },
+            { "choice": "Babel" },
+            { "choice": "Webpack" }
+          ]
+        },
+        {
+          "question": "What is returned by a functional component?",
+          "choices": [
+            { "choice": "HTML" },
+            { "choice": "JSX", "correctAnswer": "true" },
+            { "choice": "JSON" }
+          ]
+        },
+        {
+          "question": "Which prop in React Router defines navigation paths?",
+          "choices": [
+            { "choice": "path", "correctAnswer": "true" },
+            { "choice": "route" },
+            { "choice": "navigate" }
+          ]
+        },
+        {
+          "question": "Which React hook optimizes performance by memoizing values?",
+          "choices": [
+            { "choice": "useMemo", "correctAnswer": "true" },
+            { "choice": "useEffect" },
+            { "choice": "useState" }
+          ]
+        },
+        {
+          "question": "What does `setState` do?",
+          "choices": [
+            {
+              "choice": "Updates component state asynchronously",
+              "correctAnswer": "true"
+            },
+            { "choice": "Replaces props" },
+            { "choice": "Renders JSX directly" }
+          ]
+        },
+        {
+          "question": "Which lifecycle method is replaced by `useEffect`?",
+          "choices": [
+            { "choice": "componentDidMount", "correctAnswer": "true" },
+            { "choice": "render" },
+            { "choice": "shouldComponentUpdate" }
+          ]
+        },
+        {
+          "question": "Which attribute is required when rendering lists in React?",
+          "choices": [
+            { "choice": "key", "correctAnswer": "true" },
+            { "choice": "id" },
+            { "choice": "index" }
+          ]
+        },
+        {
+          "question": "What is React primarily used for?",
+          "choices": [
+            { "choice": "Building user interfaces", "correctAnswer": "true" },
+            { "choice": "Database queries" },
+            { "choice": "Server-side scripting" }
+          ]
+        },
+        {
+          "question": "Which command creates a new React app?",
+          "choices": [
+            { "choice": "npx create-react-app myApp", "correctAnswer": "true" },
+            { "choice": "npm install react" },
+            { "choice": "react new app" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "General Knowledge",
+      "questions": [
+        {
+          "question": "What is the largest ocean on Earth?",
+          "choices": [
+            { "choice": "Pacific Ocean", "correctAnswer": "true" },
+            { "choice": "Atlantic Ocean" },
+            { "choice": "Indian Ocean" }
+          ]
+        },
+        {
+          "question": "Who painted the Mona Lisa?",
+          "choices": [
+            { "choice": "Leonardo da Vinci", "correctAnswer": "true" },
+            { "choice": "Pablo Picasso" },
+            { "choice": "Vincent van Gogh" }
+          ]
+        },
+        {
+          "question": "Which gas do plants absorb during photosynthesis?",
+          "choices": [
+            { "choice": "Carbon Dioxide", "correctAnswer": "true" },
+            { "choice": "Oxygen" },
+            { "choice": "Nitrogen" }
+          ]
+        },
+        {
+          "question": "Which is the smallest prime number?",
+          "choices": [
+            { "choice": "2", "correctAnswer": "true" },
+            { "choice": "1" },
+            { "choice": "3" }
+          ]
+        },
+        {
+          "question": "Which country hosted the 2016 Summer Olympics?",
+          "choices": [
+            { "choice": "Brazil", "correctAnswer": "true" },
+            { "choice": "China" },
+            { "choice": "UK" }
+          ]
+        },
+        {
+          "question": "What is the hardest natural substance?",
+          "choices": [
+            { "choice": "Diamond", "correctAnswer": "true" },
+            { "choice": "Steel" },
+            { "choice": "Graphite" }
+          ]
+        },
+        {
+          "question": "Which element has the chemical symbol O?",
+          "choices": [
+            { "choice": "Oxygen", "correctAnswer": "true" },
+            { "choice": "Osmium" },
+            { "choice": "Oxide" }
+          ]
+        },
+        {
+          "question": "Which planet has the most moons?",
+          "choices": [
+            { "choice": "Saturn", "correctAnswer": "true" },
+            { "choice": "Jupiter" },
+            { "choice": "Mars" }
+          ]
+        },
+        {
+          "question": "What is the capital of Japan?",
+          "choices": [
+            { "choice": "Tokyo", "correctAnswer": "true" },
+            { "choice": "Kyoto" },
+            { "choice": "Osaka" }
+          ]
+        },
+        {
+          "question": "Which language has the most native speakers?",
+          "choices": [
+            { "choice": "Mandarin Chinese", "correctAnswer": "true" },
+            { "choice": "English" },
+            { "choice": "Spanish" }
+          ]
+        }
+      ]
+    }
+  ]
+}

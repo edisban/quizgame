@@ -1,0 +1,420 @@
+/* =========================================================
+    🌞 LIGHT MODE (Minimalist G-W-B)
+    ========================================================= */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f7f7f7; /* Πολύ ανοιχτό γκρι */
+    color: #1a1a1a;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+    transition: background 0.4s ease, color 0.4s ease;
+    line-height: 1.6;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 25px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #222222; /* Έντονο μαύρο-γκρι για τίτλους */
+}
+
+/* =========================================================
+    🌙 MODERN GRIT DARK MODE (Σκούρο Γκρι & Μαύρο)
+    ========================================================= */
+
+body.dark,
+.app.dark {
+    background-color: #121212; /* Βαθύ ανθρακί */
+    color: #f0f0f0; /* Απαλό λευκό-γκρι */
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.app.dark h1, .app.dark h2, .app.dark h3 {
+    color: #ffffff; /* Καθαρό λευκό για έμφαση */
+}
+
+/* =========================================================
+    HEADER & THEME BUTTON (Τετράγωνο Toggle)
+    ========================================================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.theme-button {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; /* Τετράγωνο με απαλές γωνίες */
+    padding: 10px 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    font-size: 1.1rem;
+    color: #4a4e69; /* Ζεστό γκρι */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-button:focus {
+    outline: 4px solid #4a4e69;
+    outline-offset: 2px;
+}
+
+.app.dark .theme-button {
+    background: #252525;
+    color: #f0f0f0;
+    border: 1px solid #444;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================================
+    QUIZ LIST & CARDS
+    ========================================================= */
+
+.quiz-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.quiz-card {
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    width: 220px;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.quiz-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.app.dark .quiz-card {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================================
+    QUIZ QUESTIONS / ANSWERS / TIMER
+    ========================================================= */
+
+.quiz {
+    max-width: 700px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app.dark .quiz {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.question-card {
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.question-card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Το ένα κάτω από το άλλο */
+    gap: 12px;
+    align-items: stretch;
+}
+
+.choice {
+    padding: 15px 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #1a1a1a; /* Σκούρο κείμενο για light mode */
+    font-weight: 500;
+    text-align: left;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.05s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.choice:hover {
+    background: #eeeeee;
+    border-color: #000000;
+    transform: translateY(-1px);
+}
+
+.choice.selected {
+    background-color: #000000; /* Μαύρο για επιλογή */
+    color: #fff;
+    border-color: #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.app.dark .choice {
+    background: #252525;
+    border: 1px solid #444444;
+    color: #f0f0f0;
+}
+
+.app.dark .choice:hover {
+    background: #333333;
+    border-color: #ffffff;
+}
+
+.app.dark .choice.selected {
+    background-color: #ffffff; /* Λευκό για επιλογή στο dark mode */
+    color: #121212;
+    border-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.timer {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.app.dark .timer {
+    color: #a0a0a0;
+}
+
+/* =========================================================
+    BUTTONS (Action: Μαύρο)
+    ========================================================= */
+
+button,
+.back-btn {
+    background: #000000; /* Έντονο Μαύρο */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover,
+.back-btn:hover {
+    background: #333333;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Mode Button */
+.app.dark button,
+.app.dark .back-btn {
+    background: #ffffff; /* Λευκό για το Dark Mode */
+    color: #121212;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.app.dark button:hover,
+.app.dark .back-btn:hover {
+    background: #cccccc;
+    color: #121212;
+}
+
+
+/* =========================================================
+    MODAL (Με "Πέταγμα")
+    ========================================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    border-radius: 16px;
+    padding: 40px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    outline: none;
+    /* 🔥 ΕΠΑΝΑΦΟΡΑ ΖΩΝΤΑΝΟΥ ANIMATION */
+    animation: fadeIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.app.dark .modal-content {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.close-btn {
+    margin-top: 20px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.close-btn:hover {
+    background: #333333;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* =========================================================
+    RESULTS PAGE
+    ========================================================= */
+
+.results-page {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.score-box {
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.app.dark .score-box {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.percentage {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0 15px;
+    color: #000000;
+}
+
+.app.dark .percentage {
+    color: #ffffff;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 12px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.app.dark .progress-bar {
+    background: #444444;
+}
+
+.progress {
+    background: #000000;
+    height: 100%;
+    transition: width 0.6s ease-in-out;
+}
+
+.app.dark .progress {
+    background: #ffffff;
+}
+
+/* Answer Cards (Σωστό/Λάθος) */
+.answers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.answer-card {
+    border-radius: 10px;
+    padding: 18px;
+    text-align: left;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.answer-card.correct {
+    background: #e6ffe9;
+    border-left: 6px solid #4CAF50;
+    color: #1a1a1a;
+}
+
+.answer-card.wrong {
+    background: #ffe6e6;
+    border-left: 6px solid #F44336;
+    color: #1a1a1a;
+}
+
+.app.dark .answer-card.correct {
+    background: #253326;
+    border-left: 6px solid #81C784;
+    color: #f0f0f0;
+}
+
+.app.dark .answer-card.wrong {
+    background: #332525;
+    border-left: 6px solid #E57373;
+    color: #f0f0f0;
+}
+
+.question-text {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
