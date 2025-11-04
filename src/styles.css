@@ -30,7 +30,7 @@ h1, h2, h3 {
 
 body.dark,
 .app.dark {
-    background-color: #121212; /* Βαθύ ανθρακί */
+    background-color: #373636; /* Βαθύ ανθρακί */
     color: #f0f0f0; /* Απαλό λευκό-γκρι */
     transition: background 0.4s ease, color 0.4s ease;
 }
